@@ -1,0 +1,7 @@
+{
+  "name": "ElBuenSabor2026",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Realizar Pedido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <img
+    src="assets/img/comida.png"
+    class="imagen">
+
+  <h2>Seleccione su plato</h2>
+
+  <ion-item>
+  <ion-select
+    label="Plato"
+    [(ngModel)]="plato">
+
+    <ion-select-option value="Lomo Saltado">
+      Lomo Saltado
+    </ion-select-option>
+
+    <ion-select-option value="Ceviche">
+      Ceviche
+    </ion-select-option>
+
+    <ion-select-option value="Arroz Chaufa">
+      Arroz Chaufa
+    </ion-select-option>
+
+    <ion-select-option value="Pollo a la Brasa">
+      Pollo a la Brasa
+    </ion-select-option>
+
+  </ion-select>
+</ion-item>
+
+<ion-item>
+  <ion-input
+    type="number"
+    label="Cantidad"
+    [(ngModel)]="cantidad">
+  </ion-input>
+</ion-item>
+
+<ion-button
+  expand="block"
+  (click)="confirmarPedido()">
+
+  Confirmar Pedido
+
+</ion-button>
+
+</ion-content>

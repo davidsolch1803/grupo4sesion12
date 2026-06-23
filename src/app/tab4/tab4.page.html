@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Entrega</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <img
+    src="assets/img/entrega.png"
+    class="imagen">
+
+  <h2>Pedido en Camino</h2>
+
+  <ion-item>
+    Plato: {{ plato }}
+  </ion-item>
+
+  <ion-item>
+    Cantidad: {{ cantidad }}
+  </ion-item>
+
+  <ion-item color="success">
+    ✔ Pedido recibido
+  </ion-item>
+
+  <ion-item color="warning">
+    ✔ Pedido preparado
+  </ion-item>
+
+  <ion-item color="primary">
+    🚚 Repartidor en camino
+  </ion-item>
+
+</ion-content>

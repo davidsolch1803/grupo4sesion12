@@ -1,0 +1,36 @@
+<ion-content>
+
+  <div class="contenedor-login">
+
+    <img
+      src="assets/img/logo.png"
+      class="logo">
+
+    <h1>El Buen Sabor</h1>
+
+    <ion-item>
+      <ion-input
+        label="Usuario"
+        [(ngModel)]="usuario">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        type="password"
+        label="Contraseña"
+        [(ngModel)]="password">
+      </ion-input>
+    </ion-item>
+
+    <ion-button
+      expand="block"
+      (click)="login()">
+
+      Iniciar Sesión
+
+    </ion-button>
+
+  </div>
+
+</ion-content>
